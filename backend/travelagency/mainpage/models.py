@@ -45,6 +45,7 @@ class AdditionalInfoModel(models.Model):
 
 class TourModel(models.Model):
     id = models.AutoField(primary_key=True)
+    image = models.ImageField(upload_to='images/')
     name = models.CharField(max_length=60)
     price = models.CharField(max_length=10)
     nightamount = models.CharField(max_length=2)
