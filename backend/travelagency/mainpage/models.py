@@ -1,5 +1,4 @@
 from django.db import models
-import datetime
 
 
 # Create your models here.
@@ -28,7 +27,7 @@ class UserInfoModel(models.Model):
 class DepartureInfoModel(models.Model):
     id = models.AutoField(primary_key=True)
     departureplace = models.CharField(max_length=60)
-    departuredate = models.DateTimeField("Date", default=datetime.date.today)
+    departuredate = models.DateTimeField()
 
     def __str__(self):
         return f"{self.id} - {self.departureplace}"
@@ -49,8 +48,12 @@ class TourModel(models.Model):
     name = models.CharField(max_length=60)
     price = models.CharField(max_length=10)
     nightamount = models.CharField(max_length=2)
-    additionalinformation = models.ForeignKey(AdditionalInfoModel, on_delete=models.CASCADE)
-    departureinformation = models.ForeignKey(DepartureInfoModel, on_delete=models.CASCADE)
+    additionalinformation = models.ForeignKey(
+        AdditionalInfoModel, on_delete=models.CASCADE
+    )
+    departureinformation = models.ForeignKey(
+        DepartureInfoModel, on_delete=models.CASCADE
+    )
 
     def __str__(self):
         return f"{self.id} - {self.name}"
@@ -59,7 +62,9 @@ class TourModel(models.Model):
 class TicketModel(models.Model):
     id = models.AutoField(primary_key=True)
     tourinformation = models.ForeignKey(TourModel, on_delete=models.CASCADE)
-    managerinformation = models.ForeignKey(ManagerAccountModel, on_delete=models.CASCADE)
+    managerinformation = models.ForeignKey(
+        ManagerAccountModel, on_delete=models.CASCADE
+    )
     userinformation = models.ForeignKey(UserInfoModel, on_delete=models.CASCADE)
 
     def __str__(self):

@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'travelagency.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db-name',
-        'USER': 'db-user',
-        'PASSWORD': 'user-password',
+        'NAME': 'travelagency',
+        'USER': 'agencyuser',
+        'PASSWORD': 'user9000p',
         'HOST': 'localhost',
         'PORT': '',
     }
