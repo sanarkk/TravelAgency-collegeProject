@@ -48,14 +48,32 @@ html {
       padding: 25px 10px 10px 10px;
       border-radius: 15px;
 }
+.Buy_button{
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 70px;
+    width: 120px;
+    font: bold 17px arial,sans-serif;
+    text-shadow: none;
+    margin-top: 20px;
+    clear: both;
+    transform: translate(-50%, -50%);
+    top: 43.5%;
+    left: 68.5%;
+    display: block;
+    position: absolute;
+      padding: 10px 10px 10px 10px;
+}
 .main_info_about_tour{
     margin-top: 10px;
     margin-bottom: 10px;
     clear: both;
     transform: translate(-50%, -50%);
     top: 25%;
-    left: 60%;
-    width: 600px;
+    left: 52%;
+    width: 400px;
     height: 400px;
     display: block;
     position: absolute;
