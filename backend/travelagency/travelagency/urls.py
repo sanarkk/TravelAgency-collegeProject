@@ -19,11 +19,13 @@ from django.urls import path, include
 from tourspage import views
 from django.conf.urls.static import static
 from django.conf import settings
-from loginpage.views import loginpage_view
+from loginpage.views import loginpage_view, logout_user
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('tours/<int:tour_id>', views.tour_view),
     path('', include('django.contrib.auth.urls')),
     path('', include('loginpage.urls')),
+    path('hottours/', include('mainpage.urls')),
+    path('logout_user/', logout_user, name='logout_user')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
