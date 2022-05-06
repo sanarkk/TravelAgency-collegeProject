@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,5 +8,6 @@
 <body>
     <img src="{{ tour.image.url }}">
     {{ tour.country }}
+    <img src="{% static 'img/travel-loginpage.jpg' %}" alt="My image">
 </body>
 </html>

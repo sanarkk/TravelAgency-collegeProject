@@ -39,6 +39,7 @@ INSTALLED_APPS = [
 
     'mainpage',
     'tourspage',
+    'loginpage',
 ]
 
 MIDDLEWARE = [
