@@ -9,9 +9,14 @@ def loginpage_view(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('tours/1')
+            return redirect('hottours/')
             # NEED TO REDIRECT ON MAINPAGE
         else:
             return render(request, 'tours/pages/login_page.html')
     else:
         return render(request, 'tours/pages/login_page.html')
+
+
+def logout_user(request):
+    logout(request)
+    return redirect('/')

@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=Yanone+Kaffeesatz&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+html {
+  height: 100%;
+}
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  clear: both;
+  transform: translate(-50%, -50%);
+  top: 350px;
+  left: 10%;
+  display: block;
+  position: absolute;
+  max-width: 800px;
+  font-family: "Montserrat", sans-serif, Arial, sans-serif;
+    background-color: rgba(143, 143, 143, 0);;
+    padding: 25px 10px 10px 10px;
+    border-radius: 15px;
+}
+.foto{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 20%;
+    width: 600px;
+    height: 400px;
+    display: block;
+    position: absolute;
+      background-color: rgba(58, 58, 58, 0.63);;
+      padding: 25px 10px 10px 10px;
+      border-radius: 15px;
+}
+.allgemein_info_about_tour{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    transform: translate(-50%, -50%);
+    top: 73%;
+    left: 50%;
+    width: 1630px;
+    height: 370px;
+    display: block;
+    position: absolute;
+      background-color: rgb(219, 219, 219);;
+      padding: 25px 10px 10px 10px;
+      border-radius: 15px;
+}
+.Buy_button{
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 70px;
+    width: 120px;
+    font: bold 17px arial,sans-serif;
+    text-shadow: none;
+    margin-top: 20px;
+    clear: both;
+    transform: translate(-50%, -50%);
+    top: 43.5%;
+    left: 68.5%;
+    display: block;
+    position: absolute;
+      padding: 10px 10px 10px 10px;
+}
+.main_info_about_tour{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 52%;
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: absolute;
+      background-color: rgba(255, 255, 255, 0.719);;
+      padding: 25px 10px 10px 10px;
+      border-radius: 15px;
+}
+
+.info_about_tour{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    transform: translate(-50%, -50%);
+    top: 27%;
+    left: 23%;
+    width: 600px;
+    height: 400px;
+    display: block;
+    position: absolute;
+      background-color: rgba(58, 58, 58, 0.63);;
+      padding: 25px 10px 10px 10px;
+      border-radius: 15px;
+}
+.tour_info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    clear: both;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    width: 1700px;
+    height: 900px;
+    display: block;
+    position: absolute;
+    font-family: "Montserrat", sans-serif, Arial, sans-serif;
+      background-color: rgba(58, 58, 58, 0.63);;
+      padding: 25px 10px 10px 10px;
+      border-radius: 15px;
+}
+.frst_content{
+    color: rgb(255, 255, 255);
+}
+.frst_pargh_1{
+    position: absolute;
+    left: 280px;
+    top: 305px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 5px;
+    border-radius: 15px;
+}
+.frst_pargh_2{
+    position: absolute;
+    left: 870px;
+    top: 470px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    transform: translateX(-50%) rotate(10deg);
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 5px;
+    border-radius: 15px;
+}
+.frst_pargh_3{
+    position: absolute;
+    top: 470px;
+    left: 1240px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    transform: translateX(-50%) rotate(-10deg);
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 5px;
+    border-radius: 15px;
+}
+.frst_pargh_4{
+    position: absolute;
+    top: 520px;
+    left: 430px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-ser if;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    transform: translateX(-50%) rotate(13deg);
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 5px;
+    border-radius: 15px;
+}
+.sec_pargh_1{
+    position: absolute;
+    left: 670px;
+    top: 30px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 10px;
+    border-radius: 15px;
+}
+.sec_pargh_2{
+    position: absolute;
+    left: 40px;
+    top: 200px;
+    font-size: 50px;
+    width: 1200px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 5px;
+    border-radius: 15px;
+}
+.sec_pargh_3{
+    position: absolute;
+    left: 25px;
+    top: 400px;
+    font-size: 50px;
+    width: 200px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 5px;
+    border-radius: 15px;
+}
+.sec_pargh_4{
+    position: absolute;
+    left: 70px;
+    top: 470px;
+    font-size: 50px;
+    width: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgba(143, 143, 143, 0.616);;
+    padding: 5px;
+    border-radius: 15px;
+}
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 0;
+  line-height: 47px;
+  letter-spacing: 2px;
+}
+.title {
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+}
+body{
+    margin:0;
+    background-color: rgb(0, 0, 0);
+}
+html {
+    scroll-behavior: smooth;
+}
+.image_first_pg1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.name_of_company{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    font-size: large;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+.Navigation{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    height: 100vh;
+    width: max-content;
+    min-width: 600px;
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: -19px;
+    letter-spacing: 1px;
+    right: -15%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+.block_navigation{
+    position: absolute;
+    margin: auto;
+    background-color: rgb(3, 19, 105);
+    margin: auto;
+    padding: auto;
+    width: 1903px;
+    height: 50px;
+    top: 0px;
+    left: 0;
+}
+.Navigation1{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    height: 20vh;
+    width: 100px;
+    min-width: 100px;
+    display: flex ;
+    text-align: right;
+    justify-content: space-around;
+    top: 36%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+.our_projects{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+    background-color: rgba(143, 143, 143, 0.281);
+    border-radius: 15px;
+}
+.project_name{
+    position: absolute;
+    width: 190px;
+    height: 50px;
+    top: 120px;
+    left: 130px;
+    background-color: rgba(253, 253, 253, 0.281);
+    border-radius: 15px;
+}
+.project_info{
+    position: absolute;
+    width: 210px;
+    height: 200px;
+    top: 180px;
+    left: 120px;
+    background-color: rgba(253, 253, 253, 0.281);
+    border-radius: 15px;
+}
+
+*,
+*::before
+*::after{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(131, 131, 131);
+    font-size: 30px;
+    letter-spacing: 0 10px;
+}
+a::after{
+    content: "";
+    position: absolute;
+    background-color: #01b3a7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+a:hover::after{
+    width: 100%;
+}
+nav.panel1{
+    position: absolute;
+    margin-top: 80px;
+    padding: auto;
+}
+nav.panel3{
+    position: absolute;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgba(143, 143, 143, 0.192);
+}
+.image_first_pg2{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.image_first_pg3{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.image_first_pg4{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 0;
+    left: 0;
+}
+.image_first_pg5{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 0;
+    left: 0;
+}
+.gallery{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.gallery img{
+    border-radius: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+.company_image{
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px red solid;
+}
+.Rights{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+    text-align: left;
+    margin: auto;
+    padding: auto;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.to_the_top{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    left:50%;
+    color: rgb(179, 88, 15);
+    margin: auto;
+    padding: auto;
+}
+a.to_the_top{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(143, 143, 143);
+    font-size: 30px;
+    letter-spacing: 0 10px;
+}
+a.to_the_top::after{
+    position: absolute;
+    background-color: rgb(187, 108, 19);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a.to_the_top:hover{
+    color: rgb(134, 134, 134);
+}
+
+a:hover::after{
+    width: 100%;
+}
+.arrow-7 {
+    margin: 10px auto 10px auto;
+    width: 38px;
+    height: 10px;
+}
+.arrow-7 span {
+    top: 88%;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fbff002d;
+    border-right: 5px solid #be700a2c;
+    margin: -16px 0;
+    animation: arrow-7 4s infinite;
+}
+.arrow-7 span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-7 span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+    0%{
+        opacity: 0;
+        transform: translate(0,60px) rotate(225deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,-20px) rotate(225deg);
+    }
+}
+.information{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    left: 10px;
+    text-align: left;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    width: 800px;
+    height: 500px;
+    bottom: 210px;
+    box-shadow: 0px 0px 10px 3px  rgba(56, 56, 56, 0.548);
+    border-radius: 20px;
+}
+.sprites.insta{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding: auto;
+}
+.sprites.LinkedIn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30%;
+    margin: auto;
+    padding: auto;
+}

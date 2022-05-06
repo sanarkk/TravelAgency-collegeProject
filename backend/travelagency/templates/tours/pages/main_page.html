@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="{% static 'css/pages.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <title>Project</title>
+    <title>Main page</title>
 </head>
 <body>
     <header class="company-header">
         <div class="image" id="Home">
-        <img class="company-img" src="../img/1851808.jpg" alt="mountains" style="width:100%;">
+        <img class="company-img" src="{% static 'img/background-main.jpg' %}" alt="mountains" style="width:100%;">
         <div class=block_navigation></div>
         <div class="Frst_name">
             <section class="container">
@@ -28,7 +29,7 @@
 
                     <a href="#Our projects" id="nav_Our_projects">All tours</a>&nbsp;&nbsp;&nbsp;&nbsp;
 
-                    <a href="#Contacts" id="nav_contacts">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="{% url 'logout_user' %}" id="nav_contacts">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;
 
 
                 </nav>
