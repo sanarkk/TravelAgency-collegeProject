@@ -27,5 +27,6 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
     path('', include('loginpage.urls')),
     path('hottours/', include('mainpage.urls')),
-    path('logout_user/', logout_user, name='logout_user')
+    path('logout_user/', logout_user, name='logout_user'),
+    path('buyticket/', include('buyticketpage.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
