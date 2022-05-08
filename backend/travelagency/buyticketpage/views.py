@@ -1,6 +1,9 @@
 from django.shortcuts import render
+from .forms import CustomerForm
 
 
 # Create your views here.
 def ticketpage_view(request):
-    return render(request, "tours/pages/ticket_buy.html", {})
+    form12 = CustomerForm()
+    context = {'form12': form12}
+    return render(request, "tours/pages/userdata_page.html", context)
