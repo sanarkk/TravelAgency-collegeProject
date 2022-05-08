@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <title>{{ tours.name }}</title>
+    <title>Ticket buy</title>
 </head>
 <body style="background-color: rgb(198, 165, 102);">
     <header class="company-header">
@@ -16,25 +16,26 @@
         <div class=block_navigation></div>
         <div>
             <section class="tour_info">
-                <section class="foto">
-                    <img width="600" src="{{ tours.image.url }}" alt="">
-                </section>
-                <section class="allgemein_info_about_tour">
-                    Опис:...
-                </section>
-
-                <section class="main_info_about_tour">
-                        Price: {{ tours.price }}<br>
-                        Night amount: {{ tours.nightamount }}<br>
+                <h2 class="ticket_info" style="font-size:40px; margin-left: 750px; margin-top: -176px; position: absolute; color: white;">Buy ticket</h2>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {{ form13.as_p }}
+                    <input type="submit" value="Buy ticket" id="submit">
+                    <section class="tour_gallery"  style="margin-left: 700px; top: 300px; margin-top: -343px;">
+                        <section class="foto_bit">
+                            <img width="400" height="250" src="{{ tour.image.url }}" alt="">
+                        </section>
+                        Price: {{ tour.price }}<br>
+                        Night amount: {{ tour.nightamount }}<br>
                         Hotel name: {{ addinfo.hotel }}<br>
                         Hotel rating: {{ addinfo.rating }}<br>
                         Departure date: {{ departures.departuredate }}<br>
                         Departure place: {{ departures.departureplace }}<br>
-                </section>
-                <a class="Buy_button" href="{% url 'buyticket' tours.pk %}">
-                    Купити
-                </a>
+                    </section>
+                </form>
             </section>
+
         </div>
             <div class = "Navigation">
                 <nav class="panel1">
