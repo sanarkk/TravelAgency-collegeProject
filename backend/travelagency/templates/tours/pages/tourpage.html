@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <title>All tours</title>
+    <title>{{ tours.name }}</title>
 </head>
 <body style="background-color: rgb(198, 165, 102);">
     <header class="company-header">
@@ -16,21 +16,24 @@
         <div class=block_navigation></div>
         <div>
             <section class="tour_info">
-                {% for tour in tours %}
-                <section class="tour_gallery">
-
-                    <section class="foto_bit">
-                        <img width="400" height="250" src="{{ tour.image.url }}" alt="">
-                    </section>
-                    Ціна: {{ tour.price }}<br>
-                    Кількість ночей: {{ tour.nightamount }}<br>
-                    Назва туру: {{ tour.name }}<br>
-                    <a class="more_button" href="{% url 'tourshow' tour.pk %}">
-                        More...
-                    </a>
-
+                <section class="foto">
+                    <img width="600" src="{{ tours.image.url }}" alt="">
                 </section>
-                {% endfor %}
+                <section class="allgemein_info_about_tour">
+                    Опис:...
+                </section>
+
+                <section class="main_info_about_tour">
+                    Price: {{ tours.price }}<br>
+                    Night amount: {{ tours.nightamount }}<br>
+                    Hotel name: {{ addinfo.hotel }}<br>
+                    Hotel rating: {{ addinfo.rating }}<br>
+                    Departure date: {{ departures.departuredate }}<br>
+                    Departure place: {{ departures.departureplace }}<br>
+                </section>
+                <button class="Buy_button">
+                    Купити
+                </button>
             </section>
         </div>
             <div class = "Navigation">

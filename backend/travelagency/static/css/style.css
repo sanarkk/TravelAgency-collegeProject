@@ -317,7 +317,7 @@ html {
 .block_navigation{
     position: absolute;
     margin: auto;
-    background-color: rgb(3, 19, 105);
+    background-color: rgba(204, 59, 59, 0.76);
     margin: auto;
     padding: auto;
     width: 100%;
@@ -381,7 +381,7 @@ a{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: rgb(131, 131, 131);
+    color: rgb(255, 255, 255);
     font-size: 30px;
     letter-spacing: 0 10px;
 }
