@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tourspage',
     'loginpage',
     'buyticketpage',
+    'alltourspage',
 ]
 
 MIDDLEWARE = [
