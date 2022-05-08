@@ -29,4 +29,5 @@ urlpatterns = [
     path('hottours/', include('mainpage.urls')),
     path('logout_user/', logout_user, name='logout_user'),
     path('buyticket/', include('buyticketpage.urls')),
+    path('alltours/', include('alltourspage.urls'), name="alltours"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
