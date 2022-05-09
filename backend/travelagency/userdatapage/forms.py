@@ -1,12 +1,5 @@
 from django.forms import ModelForm
-from mainpage.models import UserInfoModel, TicketModel
-
-
-class CustomerForm(ModelForm):
-    class Meta:
-        model = UserInfoModel
-        fields = '__all__'
-
+from mainpage.models import TicketModel
 
 class TicketForm(ModelForm):
     class Meta:
