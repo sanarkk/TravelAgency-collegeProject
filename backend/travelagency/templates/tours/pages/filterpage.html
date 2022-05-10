@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <title>Filter page</title>
+</head>
+<body style="background-color: rgb(198, 165, 102);">
+    <header class="company-header">
+        <div class="image" id="Home">
+        <img class="company-img" src="" alt="" style="width:100%;">
+        <div class=block_navigation></div>
+        <div>
+            <form method="get" style="    margin-top: 50px;
+    margin-left: 100px;
+    width: 1200px;
+    background-color: rgba(58, 58, 58, 0.63);
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 35px;
+    color: white;">
+                <div>
+                    {{ filter.form }}
+                </div>
+                    <input type="submit" id="submit" value="Search" style="
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+margin-top: 20px;
+border-radius: 15px;
+">
+            </form>
+            <section class="tour_info" style="top: 973px;">
+                {% for tour in tours %}
+                <section class="tour_gallery" style="">
+
+                    <section class="foto_bit">
+                        <img width="400" height="250" src="{{ tour.image.url }}" alt="">
+                    </section>
+                    Ціна: {{ tour.price }}<br>
+                    Кількість ночей: {{ tour.nightamount }}<br>
+                    Назва туру: {{ tour.name }}<br>
+                    <a class="more_button" href="{% url 'tourshow' tour.pk %}">
+                        More...
+                    </a>
+
+                </section>
+                {% endfor %}
+            </section>
+        </div>
+            <div class = "Navigation">
+                <nav class="panel1">
+
+                    <a href="#About Us" id="nav_About_Us">Search</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a href="{% url 'alltours' %}" id="nav_Our_projects">All tours</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a href="{% url 'logout_user' %}" id="nav_contacts">Log Out</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
