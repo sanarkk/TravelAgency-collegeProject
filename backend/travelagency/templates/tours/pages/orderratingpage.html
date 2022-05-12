@@ -24,24 +24,11 @@
     line-height: 35px;
     color: white;">
                 <div>
-                    {{ filter.form.as_p }}
-                    <a style="font-size: 18px;" href="{% url 'priceorder' %}">Sort by price</a>
+                    <a style="font-size: 18px;" href="{% url 'ticketfilter' %}">Back</a>
                 </div>
-                    <input type="submit" id="submit" value="Search" style="
-background: #0066A2;
-color: white;
-border-style: outset;
-border-color: #0066A2;
-height: 50px;
-width: 100px;
-font: bold15px arial,sans-serif;
-text-shadow: none;
-margin-top: 20px;
-border-radius: 15px;
-">
             </form>
-            <section class="tour_info" style="top: 913px;margin-top: 190px;">
-                {% for tour in tours %}
+            <section class="tour_info" style="top: 913px;margin-top: -100px;">
+                {% for tour in tours_sorted %}
                 <section class="tour_gallery" style="">
 
                     <section class="foto_bit">
