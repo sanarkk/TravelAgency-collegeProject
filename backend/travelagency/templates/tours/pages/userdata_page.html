@@ -19,19 +19,40 @@
                 <h2 class="ticket_info" style="font-size:40px; margin-left: 750px; margin-top: -176px; position: absolute; color: white;">Buy ticket</h2>
                 <form action="" method="POST">
                     {% csrf_token %}
-                    {{ form.as_p }}
-                    {{ form13.as_p }}
-                    <input type="submit" value="Buy ticket" id="submit">
-                    <section class="tour_gallery"  style="margin-left: 700px; top: 300px; margin-top: -343px;">
+                    <div style="    margin-top: 50px;
+    margin-left: 60px;
+    width: 300px;
+    background-color: rgba(58, 58, 58, 0.63);
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 35px;
+    color: white;">
+                        {{ form13.as_p }}
+                        <input type="submit" value="Buy ticket" id="submit" style="
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+margin-top: 20px;
+border-radius: 15px;
+">
+                    </div>
+
+                    <section class="tour_gallery"  style="margin-left: 900px; top: -290px;">
                         <section class="foto_bit">
                             <img width="400" height="250" src="{{ tour.image.url }}" alt="">
                         </section>
-                        Price: {{ tour.price }}<br>
+                        Tour name: {{ tour.name }}<br>
+                        <br>Price: {{ tour.price }}<br>
                         Night amount: {{ tour.nightamount }}<br>
                         Hotel name: {{ addinfo.hotel }}<br>
                         Hotel rating: {{ addinfo.rating }}<br>
                         Departure date: {{ departures.departuredate }}<br>
-                        Departure place: {{ departures.departureplace }}<br>
+                        Departure place: {{ departures.departureplace }}<br><br>
                     </section>
                 </form>
             </section>
@@ -39,6 +60,8 @@
         </div>
             <div class = "Navigation">
                 <nav class="panel1">
+
+                    <a href="{% url 'hottourspage' %}" id="nav_About_Us" style="right: 1500px; position: absolute; top: 3px;"><img src="{% static 'img/logo-sun.png' %}" style="height: 50px; width: 50px; position: absolute; right: 140px; top: -6px;">HotTours</a> &nbsp;&nbsp;&nbsp;&nbsp;
 
                     <a href="{% url 'ticketfilter' %}" id="nav_About_Us">Search</a> &nbsp;&nbsp;&nbsp;&nbsp;
 
