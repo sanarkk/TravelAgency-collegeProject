@@ -31,4 +31,5 @@ urlpatterns = [
     path('alltours/', include('alltourspage.urls'), name="alltours"),
     path('buyticket/', include('userdatapage.urls'), name="buyticket"),
     path('filterticket/', include('filterpage.urls'), name="filterticket"),
+    path('allticketspage/', include('allticketspage.urls'), name='alltickets'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
