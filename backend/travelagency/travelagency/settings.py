@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'filterpage',
     'mainpage',
     'tourspage',
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'buyticketpage',
     'alltourspage',
     'userdatapage',
+    'allticketspage',
 ]
 
 MIDDLEWARE = [

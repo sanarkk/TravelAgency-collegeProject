@@ -15,7 +15,7 @@
         <img class="company-img" src="" alt="" style="width:100%;">
         <div class=block_navigation></div>
         <div>
-            <section class="tour_info">
+            <section class="tour_info" style="top: 1050px;">
                 {% for tour in tours %}
                 <section class="tour_gallery">
 
@@ -37,6 +37,8 @@
                 <nav class="panel1">
 
                     <a href="{% url 'hottourspage' %}" id="nav_About_Us" style="right: 1500px; position: absolute; top: 3px;"><img src="{% static 'img/logo-sun.png' %}" style="height: 50px; width: 50px; position: absolute; right: 140px; top: -6px;">HotTours</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a href="{% url 'allticketspage' %}" id="nav_contacts" style="right: 470px; position: absolute; display: inline-block; clear: both; white-space: nowrap;">Tickets history</a>&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <a href="{% url 'ticketfilter' %}" id="nav_About_Us">Search</a> &nbsp;&nbsp;&nbsp;&nbsp;
 

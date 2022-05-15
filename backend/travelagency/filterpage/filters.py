@@ -6,5 +6,5 @@ from mainpage.models import *
 class TicketFilter(django_filters.FilterSet):
     class Meta:
         model = TourModel
-        fields = ['price', 'nightamount', 'additionalinformation__country', 'departureinformation__departureplace']
+        fields = ['nightamount', 'additionalinformation__country', 'departureinformation__departureplace']
         exlude = ['image', 'id', 'description']

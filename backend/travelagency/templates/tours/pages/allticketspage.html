@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <title>Filter page</title>
+    <title>All tours</title>
 </head>
 <body style="background-color: rgb(198, 165, 102);">
     <header class="company-header">
@@ -15,32 +15,15 @@
         <img class="company-img" src="" alt="" style="width:100%;">
         <div class=block_navigation></div>
         <div>
-            <form method="get" style="    margin-top: 50px;
-    margin-left: 60px;
-    width: 1200px;
-    background-color: rgba(58, 58, 58, 0.63);
-    padding: 20px;
-    border-radius: 15px;
-    line-height: 35px;
-    color: white;">
-                <div>
-                    <a style="font-size: 18px;" href="{% url 'ticketfilter' %}">Back</a>
-                </div>
-            </form>
-            <section class="tour_info" style="top: 913px;margin-top: -100px;">
-                {% for tour in tours_sorted %}
-                <section class="tour_gallery" style="">
-
-                    <section class="foto_bit">
-                        <img width="400" height="250" src="{{ tour.image.url }}" alt="">
-                    </section>
-                    Ціна: {{ tour.price }}<br>
-                    Кількість ночей: {{ tour.nightamount }}<br>
-                    Назва туру: {{ tour.name }}<br>
-                    <a class="more_button" href="{% url 'tourshow' tour.pk %}">
-                        More...
-                    </a>
-
+            <section class="tour_info" style="top: 800px;">
+                {% for ticket in tickets %}
+                <section class="tour_gallery" style="height: 140px; top: -100px;">
+                    Name: {{ ticket.name }}<br>
+                    Surname: {{ ticket.surname }}<br>
+                    Address: {{ ticket.address }}<br>
+                    Gender: {{ ticket.gender }}<br>
+                    Phone Number: {{ ticket.phoneNumber }}<br>
+                    Passport Number: {{ ticket.passportNumber }}<br>
                 </section>
                 {% endfor %}
             </section>
@@ -49,6 +32,8 @@
                 <nav class="panel1">
 
                     <a href="{% url 'hottourspage' %}" id="nav_About_Us" style="right: 1500px; position: absolute; top: 3px;"><img src="{% static 'img/logo-sun.png' %}" style="height: 50px; width: 50px; position: absolute; right: 140px; top: -6px;">HotTours</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a href="{% url 'allticketspage' %}" id="nav_contacts" style="right: 470px; position: absolute; display: inline-block; clear: both; white-space: nowrap;">Tickets history</a>&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <a href="{% url 'ticketfilter' %}" id="nav_About_Us">Search</a> &nbsp;&nbsp;&nbsp;&nbsp;
 
