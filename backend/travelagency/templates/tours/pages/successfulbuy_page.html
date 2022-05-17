@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <title>All tours</title>
+    <title>Ready</title>
 </head>
 <body style="background-color: rgb(198, 165, 102);">
     <header class="company-header">
@@ -15,17 +15,23 @@
         <img class="company-img" src="" alt="" style="width:100%;">
         <div class=block_navigation></div>
         <div>
-            <section class="tour_info" style="top: 800px; position: relative; margin-top: 144px;">
-                {% for ticket in tickets %}
-                <section class="tour_gallery" style="height: 140px; top: -100px;">
+            <section class="tour_info" style="top: 840px;">
+                <h2>Ticket </h2>
+                <section class="tour_gallery" style="top: 100px; left: 800px;">
+
+                    Ticket id: {{ ticket_id }}<br>
                     Name: {{ ticket.name }}<br>
                     Surname: {{ ticket.surname }}<br>
                     Address: {{ ticket.address }}<br>
                     Gender: {{ ticket.gender }}<br>
                     Phone Number: {{ ticket.phoneNumber }}<br>
-                    Passport Number: {{ ticket.passportNumber }}<br>
+                    Passport number: {{ ticket.passportNumber }}<br>
+                    Tour name: {{ tour.name }}<br>
+                    Tour price: {{ tour.price }}<br>
+                    Tour night amount: {{ tour.nightamount }}<br>
+
+
                 </section>
-                {% endfor %}
             </section>
         </div>
             <div class = "Navigation">

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import CustomerForm
+from mainpage.models import TicketModel
 
 
 # Create your views here.
