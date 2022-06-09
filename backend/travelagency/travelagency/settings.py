@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'userdatapage',
     'allticketspage',
     #'readyticketpage',
+    'registerpage',
 ]
 
 MIDDLEWARE = [

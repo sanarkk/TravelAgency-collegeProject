@@ -4,5 +4,5 @@ from django.urls import path, include
 from .views import mainpage_view
 
 urlpatterns = [
-    path('', mainpage_view, name='hottourspage')
+    path('hottours/', mainpage_view, name='hottourspage')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
