@@ -19,7 +19,7 @@ html {
 .block_navigation{
     position: absolute;
     margin: auto;
-    background-color: rgb(3, 19, 105);
+    background-color: rgba(0, 0, 0, 0.63);
     margin: auto;
     padding: auto;
     width: 1903px;
@@ -27,7 +27,9 @@ html {
     top: 0px;
     left: 0;
 }
-
+.Navigation a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .Navigation{
     font-family: 'Bebas Neue', cursive;
     font-family: 'Comfortaa', cursive;
@@ -39,7 +41,7 @@ html {
     justify-content: space-around;
     position: absolute;
     top: -19px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     right: -15%;
     transform: translate(-50%, -50%);
     margin: auto;

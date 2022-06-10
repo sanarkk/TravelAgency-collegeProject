@@ -15,7 +15,7 @@ html {
 .block_navigation{
     position: absolute;
     margin: auto;
-    background-color: rgb(3, 19, 105);
+    background-color: rgba(0, 0, 0, 0.452);
     margin: auto;
     padding: auto;
     width: 1903px;
@@ -135,8 +135,11 @@ nav.panel3{
     justify-content: space-around;
     position: absolute;
     top: -19px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     right: -15%;
     transform: translate(-50%, -50%);
     margin: auto;
+}
+.Navigation a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

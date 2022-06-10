@@ -46,7 +46,7 @@ html {
 .block_navigation{
     position: absolute;
     margin: auto;
-    background-color: rgb(3, 19, 105);
+    background-color: rgba(0, 0, 0, 0.63);
     margin: auto;
     padding: auto;
     width: 1903px;
@@ -144,10 +144,10 @@ html {
       padding: 10px 10px 10px 10px;
 }
 
-
+.Navigation a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .Navigation{
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Comfortaa', cursive;
     height: 100vh;
     width: max-content;
     min-width: 600px;
@@ -156,10 +156,13 @@ html {
     justify-content: space-around;
     position: absolute;
     top: -19px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     right: -15%;
     transform: translate(-50%, -50%);
     margin: auto;
+}
+.Navigation a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -171,8 +174,7 @@ html {
     box-sizing: border-box;
 }
 a{
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Comfortaa', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -198,6 +200,7 @@ a:hover::after{
     width: 100%;
 }
 nav.panel1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: absolute;
     margin-top: 80px;
     padding: auto;
