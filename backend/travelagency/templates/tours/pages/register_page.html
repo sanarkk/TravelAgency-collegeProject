@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/loginpage.css' %}">
+    <title>Login page</title>
+
+</head>
+<body style="background-image: url({% static 'img/travel-loginpage.jpg' %});">
+    <div class="login-square" style="height: 500px;">
+        <p class="main-login-text">Register</p>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div style="font-size: 20px;">
+                {{ form.as_p }}
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
