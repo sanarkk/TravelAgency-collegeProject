@@ -100,21 +100,19 @@ html {
       border-radius: 15px;
 }
 .tour_gallery{
-    margin-top: 19px;
+    margin-top: 10px;
     margin-bottom: 10px;
     clear: both;
     transform: translate(-50%, -50%);
-    top: 0%;
-    left: 17%;
+    top: 25%;
+    left: 14%;
     width: 400px;
     height: 400px;
     display: block;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.719);;
-    padding: 25px 10px 10px 10px;
-    border-radius: 15px;
-    display: inline flow-root list-item;
-    margin-left: 60px;
+    position: absolute;
+      background-color: rgba(255, 255, 255, 0.719);;
+      padding: 25px 10px 10px 10px;
+      border-radius: 15px;
 }
 
 .info_about_tour{
@@ -133,21 +131,20 @@ html {
       border-radius: 15px;
 }
 .tour_info {
-    margin-top: -60px;
+    margin-top: 10px;
     margin-bottom: 10px;
     clear: both;
     transform: translate(-50%, -50%);
-    top: 820px;
+    top: 60%;
     left: 50%;
     width: 1700px;
-    height: 951px;
+    height: 900px;
     display: block;
     position: absolute;
     font-family: "Montserrat", sans-serif, Arial, sans-serif;
-    background-color: rgba(58, 58, 58, 0.63);;
-    padding: 250px 10px 80px 10px;
-    border-radius: 15px;
-    display: table;
+      background-color: rgba(58, 58, 58, 0.63);;
+      padding: 25px 10px 10px 10px;
+      border-radius: 15px;
 }
 .frst_content{
     color: rgb(255, 255, 255);
@@ -317,10 +314,10 @@ html {
 .block_navigation{
     position: absolute;
     margin: auto;
-    background-color: rgba(204, 59, 59, 0.76);
+    background-color: rgb(3, 19, 105);
     margin: auto;
     padding: auto;
-    width: 100%;
+    width: 1903px;
     height: 50px;
     top: 0px;
     left: 0;
@@ -381,7 +378,7 @@ a{
     position: relative;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(131, 131, 131);
     font-size: 30px;
     letter-spacing: 0 10px;
 }
@@ -562,14 +559,6 @@ a:hover::after{
     box-shadow: 0px 0px 10px 3px  rgba(56, 56, 56, 0.548);
     border-radius: 20px;
 }
-
-.form-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
 .sprites.insta{
     position: absolute;
     width: 50px;
@@ -584,15 +573,4 @@ a:hover::after{
     top: 30%;
     margin: auto;
     padding: auto;
-}
-
-#search-filter{
-    color: white;
-}
-
-#filter-form {
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 1200px;
-    background-color: rgba(58, 58, 58, 0.63);
 }
