@@ -314,7 +314,7 @@ html {
 .block_navigation{
     position: absolute;
     margin: auto;
-    background-color: rgb(3, 19, 105);
+    background-color: rgba(0, 0, 0, 0.452);
     margin: auto;
     padding: auto;
     width: 1903px;
