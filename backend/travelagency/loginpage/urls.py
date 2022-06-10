@@ -4,5 +4,5 @@ from django.conf import settings
 from . import views
 
 urlpatterns = [
-    path('', views.loginpage_view, name="login")
+    path('loginpage/', views.loginpage_view, name="login")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
